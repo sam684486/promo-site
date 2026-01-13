@@ -1,0 +1,101 @@
+:root{
+  --bg:#f6fbff;
+  --card:#ffffff;
+  --text:#162033;
+  --muted:#5a6a86;
+  --line:rgba(22,32,51,.10);
+
+  --accent:#5aa7ff;
+  --accent2:#a78bfa;
+  --accent3:#6ee7b7;
+
+  --shadow: 0 10px 26px rgba(22,32,51,.08);
+  --radius: 18px;
+}
+
+/* page */
+body{
+  color:var(--text);
+  background:
+    radial-gradient(900px 520px at 14% 0%, rgba(90,167,255,.22), transparent 60%),
+    radial-gradient(900px 520px at 86% 8%, rgba(167,139,250,.20), transparent 60%),
+    radial-gradient(720px 420px at 50% 105%, rgba(110,231,183,.18), transparent 60%),
+    linear-gradient(180deg, #f8fdff 0%, #f4f6ff 100%);
+}
+
+/* nav */
+.nav{background: rgba(248,253,255,.78); border-bottom:1px solid var(--line)}
+.nav-links a{color:var(--muted); font-weight:800; font-size:14px}
+.nav-links a:hover{color:var(--text)}
+
+/* surfaces */
+.panel,.card{
+  border:1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+/* buttons */
+.btn{
+  border:1px solid rgba(22,32,51,.12);
+  background: rgba(255,255,255,.92);
+  color: var(--text);
+  box-shadow: 0 6px 16px rgba(22,32,51,.06);
+}
+.btn:hover{background:#fff; border-color: rgba(22,32,51,.18); box-shadow: 0 10px 24px rgba(22,32,51,.08)}
+.btn-primary{
+  border-color: rgba(90,167,255,.55);
+  background: linear-gradient(135deg, rgba(90,167,255,.40), rgba(167,139,250,.28));
+  color:#fff;
+}
+
+/* badges / pills / checklist */
+.badge{
+  border:1px solid rgba(22,32,51,.10);
+  background: rgba(255,255,255,.75);
+  color: var(--muted);
+}
+.pill{
+  border:1px solid rgba(22,32,51,.10);
+  background: linear-gradient(135deg, rgba(90,167,255,.14), rgba(167,139,250,.12));
+  color: rgba(22,32,51,.72);
+}
+.checklist li{
+  border:1px solid rgba(22,32,51,.10);
+  background: rgba(90,167,255,.08);
+}
+.dot{
+  background: linear-gradient(135deg, var(--accent3), var(--accent2));
+}
+
+/* typography colors */
+.lead, .muted{color:var(--muted)}
+.small{color:rgba(22,32,51,.60)}
+
+/* form */
+label{color:var(--muted)}
+input, textarea, select{
+  border:1px solid rgba(22,32,51,.12);
+  background: rgba(248,253,255,.92);
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+}
+input:focus, textarea:focus, select:focus{
+  border-color: rgba(90,167,255,.55);
+  box-shadow: 0 0 0 4px rgba(90,167,255,.18);
+}
+
+/* theme toggle buttons */
+.theme-toggle button{
+  border:1px solid rgba(22,32,51,.14);
+  background: rgba(255,255,255,.85);
+  color: var(--muted);
+}
+.theme-toggle button[aria-pressed="true"]{
+  border-color: rgba(90,167,255,.60);
+  color: var(--text);
+  box-shadow: 0 8px 18px rgba(90,167,255,.14);
+}
+
+/* footer */
+.foot{border-top:1px solid var(--line); color:var(--muted)}

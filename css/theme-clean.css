@@ -1,0 +1,96 @@
+:root{
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --line:rgba(15,23,42,.10);
+
+  --accent:#2563eb;
+  --accent2:#1d4ed8;
+
+  --shadow: 0 10px 26px rgba(15,23,42,.08);
+  --radius: 16px;
+}
+
+/* page */
+body{
+  color:var(--text);
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+}
+
+/* nav */
+.nav{background: rgba(255,255,255,.85); border-bottom:1px solid var(--line)}
+.nav-links a{color:var(--muted); font-weight:800; font-size:14px}
+.nav-links a:hover{color:var(--accent)}
+
+/* surfaces */
+.panel,.card{
+  border:1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+/* buttons */
+.btn{
+  border:1px solid rgba(15,23,42,.15);
+  background:#ffffff;
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(15,23,42,.06);
+}
+.btn:hover{
+  border-color: rgba(37,99,235,.55);
+  box-shadow: 0 8px 20px rgba(37,99,235,.15);
+}
+.btn-primary{
+  border-color: rgba(37,99,235,.65);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color:#fff;
+}
+
+/* badges / pills / checklist */
+.badge{
+  border:1px solid rgba(37,99,235,.15);
+  background: rgba(219,234,254,.95);
+  color:#1e40af;
+}
+.pill{
+  border:1px solid rgba(37,99,235,.18);
+  background: rgba(219,234,254,.95);
+  color:#1e40af;
+}
+.checklist li{
+  border:1px solid rgba(37,99,235,.15);
+  background: rgba(239,246,255,.95);
+}
+.dot{background: var(--accent)}
+
+/* typography colors */
+.lead, .muted{color:var(--muted)}
+.small{color:rgba(15,23,42,.55)}
+
+/* form */
+label{color:var(--muted)}
+input, textarea, select{
+  border:1px solid rgba(15,23,42,.15);
+  background:#ffffff;
+  color: var(--text);
+}
+input:focus, textarea:focus, select:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.20);
+}
+
+/* theme toggle buttons */
+.theme-toggle button{
+  border:1px solid rgba(15,23,42,.14);
+  background: rgba(255,255,255,.85);
+  color: var(--muted);
+}
+.theme-toggle button[aria-pressed="true"]{
+  border-color: rgba(37,99,235,.65);
+  color: var(--text);
+  box-shadow: 0 8px 18px rgba(37,99,235,.14);
+}
+
+/* footer */
+.foot{border-top:1px solid var(--line); color:var(--muted)}
